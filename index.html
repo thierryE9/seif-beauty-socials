@@ -1,37 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Seif Beauty Clinic</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-      background: #fafafa;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seif Beauty Clinic</title>
 
-    h1 {
-      margin-bottom: 30px;
-    }
+<style>
+:root{
+    --primary:#B41B88;
+    --primary-dark:#94156f;
+}
 
-    a {
-      display: block;
-      margin: 15px auto;
-      padding: 15px;
-      width: 250px;
-      background: #222;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
-    }
-  </style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    text-align:center;
+}
+
+.logo{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+    border-radius:20px;
+    margin-bottom:24px;
+}
+
+h1{
+    color:var(--primary);
+    margin-bottom:8px;
+    font-size:2rem;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:32px;
+}
+
+.link-btn{
+    display:block;
+    width:100%;
+    padding:16px;
+    margin-bottom:16px;
+    background:var(--primary);
+    color:white;
+    text-decoration:none;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.link-btn:hover{
+    background:var(--primary-dark);
+    transform:translateY(-2px);
+}
+
+.footer{
+    margin-top:24px;
+    color:#888;
+    font-size:14px;
+}
+</style>
 </head>
-<body>
-  <h1>Seif Beauty Clinic</h1>
 
-  <a href="https://www.facebook.com/Seifbeautyclinic/">Facebook</a>
-  <a href="https://www.instagram.com/seifbeautyclinic.lb/?hl=en">Instagram</a>
+<body>
+
+<div class="container">
+
+    <img src="logo.png" alt="Seif Beauty Clinic Logo" class="logo">
+
+    <h1>Seif Beauty Clinic</h1>
+
+    <p class="subtitle">
+        Follow us on social media
+    </p>
+
+    <a class="link-btn"
+       href="https://www.instagram.com/seifbeautyclinic.lb/?hl=en"
+       target="_blank">
+       Instagram
+    </a>
+
+    <a class="link-btn"
+       href="https://www.facebook.com/Seifbeautyclinic/"
+       target="_blank">
+       Facebook
+    </a>
+
+    <div class="footer">
+        © Seif Beauty Clinic
+    </div>
+
+</div>
+
 </body>
 </html>
