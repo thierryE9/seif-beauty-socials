@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Seif Beauty Clinic</title>
 
 <link rel="stylesheet"
@@ -22,7 +23,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#fff;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fcf7fb 50%,
+        #faf4f9 100%
+    );
+
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -34,24 +42,31 @@ body{
     width:100%;
     max-width:420px;
     text-align:center;
+
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+
+    padding:36px;
+    border-radius:24px;
+
+    border:1px solid rgba(180,27,136,0.08);
+
+    box-shadow:
+        0 8px 30px rgba(180,27,136,0.08);
 }
 
 .logo{
     width:180px;
     height:180px;
     object-fit:contain;
-    border-radius:20px;
-    margin-bottom:24px;
-}
-
-h1{
-    color:var(--primary);
-    margin-bottom:8px;
+    margin-bottom:20px;
 }
 
 .subtitle{
     color:#666;
     margin-bottom:32px;
+    font-size:16px;
+    line-height:1.5;
 }
 
 .link-btn{
@@ -64,7 +79,12 @@ h1{
     padding:16px;
     margin-bottom:16px;
 
-    background:var(--primary);
+    background:linear-gradient(
+        135deg,
+        #d95db5 0%,
+        #b41b88 100%
+    );
+
     color:white;
     text-decoration:none;
 
@@ -72,12 +92,23 @@ h1{
     font-size:18px;
     font-weight:600;
 
-    transition:.2s;
+    box-shadow:
+        0 4px 15px rgba(180,27,136,0.20);
+
+    transition:all .25s ease;
 }
 
 .link-btn:hover{
-    background:var(--primary-dark);
-    transform:translateY(-2px);
+    background:linear-gradient(
+        135deg,
+        #e16dc0 0%,
+        #c02092 100%
+    );
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(180,27,136,0.30);
 }
 
 .link-btn i{
@@ -85,7 +116,7 @@ h1{
 }
 
 .footer{
-    margin-top:24px;
+    margin-top:20px;
     color:#888;
     font-size:14px;
 }
@@ -96,8 +127,9 @@ h1{
 
 <div class="container">
 
-    <img src="logo.png" alt="Seif Beauty Clinic Logo" class="logo">
-
+    <img src="logo.png"
+         alt="Seif Beauty Clinic Logo"
+         class="logo">
 
     <p class="subtitle">
         Check out our social media
@@ -105,14 +137,16 @@ h1{
 
     <a class="link-btn"
        href="https://www.instagram.com/seifbeautyclinic.lb/?hl=en"
-       target="_blank">
+       target="_blank"
+       rel="noopener noreferrer">
         <i class="fa-brands fa-instagram"></i>
         Instagram
     </a>
 
     <a class="link-btn"
        href="https://www.facebook.com/Seifbeautyclinic/"
-       target="_blank">
+       target="_blank"
+       rel="noopener noreferrer">
         <i class="fa-brands fa-facebook-f"></i>
         Facebook
     </a>
