@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seif Beauty Clinic</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 <style>
 :root{
     --primary:#B41B88;
@@ -19,7 +22,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background:#ffffff;
+    background:#fff;
     min-height:100vh;
     display:flex;
     justify-content:center;
@@ -44,7 +47,6 @@ body{
 h1{
     color:var(--primary);
     margin-bottom:8px;
-    font-size:2rem;
 }
 
 .subtitle{
@@ -53,22 +55,33 @@ h1{
 }
 
 .link-btn{
-    display:block;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
     width:100%;
     padding:16px;
     margin-bottom:16px;
+
     background:var(--primary);
     color:white;
     text-decoration:none;
+
     border-radius:14px;
     font-size:18px;
     font-weight:600;
+
     transition:.2s;
 }
 
 .link-btn:hover{
     background:var(--primary-dark);
     transform:translateY(-2px);
+}
+
+.link-btn i{
+    font-size:22px;
 }
 
 .footer{
@@ -94,13 +107,15 @@ h1{
     <a class="link-btn"
        href="https://www.instagram.com/seifbeautyclinic.lb/?hl=en"
        target="_blank">
-       Instagram
+        <i class="fa-brands fa-instagram"></i>
+        Instagram
     </a>
 
     <a class="link-btn"
        href="https://www.facebook.com/Seifbeautyclinic/"
        target="_blank">
-       Facebook
+        <i class="fa-brands fa-facebook-f"></i>
+        Facebook
     </a>
 
     <div class="footer">
